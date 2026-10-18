@@ -20,7 +20,7 @@
 </head>
 <body>
   <h1>TouchFreeze — Privacy Policy</h1>
-  <p class="updated">Last updated: August 5, 2026</p>
+  <p class="updated">Last updated: October 18, 2026</p>
 
   <p><strong>TouchFreeze does not collect, store, or share any personal data. Period.</strong></p>
 
@@ -39,11 +39,16 @@
   <ul>
     <li>draw an invisible full-screen shield that blocks touch input while locked,</li>
     <li>filter hardware volume-key presses (to block them or detect the unlock combination),</li>
-    <li>close the notification shade if it is opened while locked.</li>
+    <li>close the notification shade if it is opened while locked,</li>
+    <li>recognize which app has come to the foreground (only its package name, e.g.
+    <code>com.google.android.youtube</code>), so that the lock can close the notification
+    shade and, <em>only if you turn on the optional Pro "auto-suggest" feature</em>, offer a
+    one-tap lock notification when a known video or video-call app opens.</li>
   </ul>
   <p>The service is configured so that it <strong>cannot read screen content</strong>
-  (<code>canRetrieveWindowContent</code> is disabled). It never observes, records, or
-  transmits anything you do on your device.</p>
+  (<code>canRetrieveWindowContent</code> is disabled): it never sees text, images, or
+  anything you type. The foreground app name is checked in memory on your device and is
+  never stored, logged, or transmitted.</p>
 
   <h2>Purchases</h2>
   <p>The optional one-time "TouchFreeze Pro" upgrade is processed entirely by Google
@@ -59,7 +64,7 @@
   <hr />
 
   <h1>TouchFreeze — Gizlilik Politikası</h1>
-  <p class="updated">Son güncelleme: 5 Ağustos 2026</p>
+  <p class="updated">Son güncelleme: 18 Ekim 2026</p>
 
   <p><strong>TouchFreeze hiçbir kişisel veri toplamaz, saklamaz ve paylaşmaz. Nokta.</strong></p>
 
@@ -78,11 +83,16 @@
   <ul>
     <li>kilitliyken dokunuşları engelleyen görünmez tam ekran kalkanı çizmek,</li>
     <li>ses tuşlarını filtrelemek (engellemek veya kilit açma kombinasyonunu algılamak),</li>
-    <li>kilitliyken bildirim paneli açılırsa kapatmak.</li>
+    <li>kilitliyken bildirim paneli açılırsa kapatmak,</li>
+    <li>öne gelen uygulamanın hangisi olduğunu tanımak (yalnızca paket adı, ör.
+    <code>com.google.android.youtube</code>): böylece kilit bildirim panelini kapatabilir ve
+    <em>yalnızca isteğe bağlı Pro "otomatik öneri" özelliğini açarsanız</em>, bilinen bir video
+    ya da görüntülü arama uygulaması açıldığında tek dokunuşla kilitleme bildirimi sunar.</li>
   </ul>
   <p>Servis, <strong>ekran içeriğini okuyamayacak</strong> şekilde yapılandırılmıştır
-  (<code>canRetrieveWindowContent</code> kapalıdır). Cihazınızda yaptıklarınızı asla
-  izlemez, kaydetmez veya iletmez.</p>
+  (<code>canRetrieveWindowContent</code> kapalıdır): ekrandaki yazıları, görselleri veya
+  yazdıklarınızı asla göremez. Öndeki uygulamanın adı yalnızca cihazınızın belleğinde
+  kontrol edilir; asla kaydedilmez, günlüğe yazılmaz veya iletilmez.</p>
 
   <h2>Satın alımlar</h2>
   <p>İsteğe bağlı tek seferlik "TouchFreeze Pro" yükseltmesi tamamen Google Play
