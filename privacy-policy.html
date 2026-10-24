@@ -20,7 +20,7 @@
 </head>
 <body>
   <h1>TouchFreeze — Privacy Policy</h1>
-  <p class="updated">Last updated: October 18, 2026</p>
+  <p class="updated">Last updated: October 25, 2026</p>
 
   <p><strong>TouchFreeze does not collect, store, or share any personal data. Period.</strong></p>
 
@@ -37,7 +37,9 @@
   <h2>Accessibility Service</h2>
   <p>TouchFreeze uses Android's Accessibility Service API solely to:</p>
   <ul>
-    <li>draw an invisible full-screen shield that blocks touch input while locked,</li>
+    <li>draw an invisible shield that blocks touch input while locked: over the whole
+    screen, or, with the optional Pro partial lock, everywhere except one area you choose
+    (the shield also shows the PIN pad if you unlock with a PIN),</li>
     <li>filter hardware volume-key presses (to block them or detect the unlock combination),</li>
     <li>close the notification shade if it is opened while locked,</li>
     <li>recognize which app has come to the foreground (only its package name, e.g.
@@ -49,6 +51,12 @@
   (<code>canRetrieveWindowContent</code> is disabled): it never sees text, images, or
   anything you type. The foreground app name is checked in memory on your device and is
   never stored, logged, or transmitted.</p>
+
+  <h2>Parent PIN and fingerprint</h2>
+  <p>If you set a parent PIN (Pro), only a salted hash of it (PBKDF2) is stored, in the
+  app's private storage on your device; the PIN itself is never stored or sent anywhere.
+  Fingerprint unlock uses Android's system fingerprint prompt: TouchFreeze never sees or
+  stores your fingerprint and only receives a "matched / not matched" answer from Android.</p>
 
   <h2>Purchases</h2>
   <p>The optional one-time "TouchFreeze Pro" upgrade is processed entirely by Google
@@ -64,7 +72,7 @@
   <hr />
 
   <h1>TouchFreeze — Gizlilik Politikası</h1>
-  <p class="updated">Son güncelleme: 18 Ekim 2026</p>
+  <p class="updated">Son güncelleme: 25 Ekim 2026</p>
 
   <p><strong>TouchFreeze hiçbir kişisel veri toplamaz, saklamaz ve paylaşmaz. Nokta.</strong></p>
 
@@ -81,7 +89,9 @@
   <h2>Erişilebilirlik Servisi</h2>
   <p>TouchFreeze, Android Erişilebilirlik Servisi API'sini yalnızca şunlar için kullanır:</p>
   <ul>
-    <li>kilitliyken dokunuşları engelleyen görünmez tam ekran kalkanı çizmek,</li>
+    <li>kilitliyken dokunuşları engelleyen görünmez kalkanı çizmek: tüm ekranda ya da
+    isteğe bağlı Pro kısmi kilitte seçtiğiniz tek alan dışında her yerde (PIN ile açıyorsanız
+    PIN tuş takımı da bu kalkanda gösterilir),</li>
     <li>ses tuşlarını filtrelemek (engellemek veya kilit açma kombinasyonunu algılamak),</li>
     <li>kilitliyken bildirim paneli açılırsa kapatmak,</li>
     <li>öne gelen uygulamanın hangisi olduğunu tanımak (yalnızca paket adı, ör.
@@ -93,6 +103,13 @@
   (<code>canRetrieveWindowContent</code> kapalıdır): ekrandaki yazıları, görselleri veya
   yazdıklarınızı asla göremez. Öndeki uygulamanın adı yalnızca cihazınızın belleğinde
   kontrol edilir; asla kaydedilmez, günlüğe yazılmaz veya iletilmez.</p>
+
+  <h2>Ebeveyn PIN'i ve parmak izi</h2>
+  <p>Bir ebeveyn PIN'i belirlerseniz (Pro), yalnızca PIN'in tuzlanmış özeti (PBKDF2)
+  uygulamanın cihazınızdaki özel depolama alanında saklanır; PIN'in kendisi asla saklanmaz
+  ve hiçbir yere gönderilmez. Parmak iziyle açma, Android'in sistem parmak izi penceresini
+  kullanır: TouchFreeze parmak izinizi asla görmez ve saklamaz, Android'den yalnızca
+  "eşleşti / eşleşmedi" yanıtını alır.</p>
 
   <h2>Satın alımlar</h2>
   <p>İsteğe bağlı tek seferlik "TouchFreeze Pro" yükseltmesi tamamen Google Play
